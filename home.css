@@ -1,0 +1,426 @@
+.header-home
+{   
+  height: 700px;
+  background: url("content/home/natalie-hua-9oGoyCX3g_A-unsplash-min.jpg") 0 0 no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed
+}
+.networks
+{
+  position: fixed;
+  background-color: #062474;
+  padding: 10px 10px 0 10px;
+  width: 20px;
+  right: 0px; 
+  top: 35%;
+  text-align: center;
+  font: 1.1em Arial;
+}
+.networks a
+{
+  color: white;
+}
+
+.home-title
+{
+  color: white;
+  font: bold 3.5em Arial;
+  padding-top: 540px;
+  margin-top: 0;
+  width: 692px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.home-about
+{
+  display: flex; 
+  align-items: stretch;
+  height: 150px;
+}
+.first-about
+{
+  background-color: #c94669;
+}
+.first-about span, .sec-about span, .third-about span
+{
+  color: white;
+  font: 1em Arial;
+}
+.sec-about
+{
+  background-color: #2571df;
+}
+.third-about
+{
+  background-color: #1b3c8d;
+}
+.first-about, .sec-about, .third-about
+{
+  flex: 1 1 100px;
+  text-align: center;
+  padding-top: 45px;
+}
+#firstline
+{
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+
+.slogan
+{
+  color: white;
+  font: italic 2em Arial;
+  text-align: center;
+  padding-top: 30px;
+  height: 200px;
+  background-color: #f5a6bd;
+}
+#slog-author
+{
+  font-style: normal;
+  font-size: 0.5em;
+}
+
+.home-join
+{
+  display: flex;
+  height: 500px;
+}
+.join-text
+{
+  padding-top: 100px;
+  flex: 2 1 100px;
+  background-color: #1b3c8d;
+  text-align: center;
+}
+.join-img
+{
+  flex: 3 1 100px;
+  overflow: hidden;
+  position: relative;
+}
+.join-img img
+{
+  max-height: 100%;
+  position: absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+}
+#join-text
+{
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.join-text span
+{
+  color: white;
+  font: 2em Arial;
+}
+.home-button a
+{
+  text-align: center;
+  height: 40px;
+  width: 130px;
+  margin: 30px auto;
+  padding-top: 20px;
+  background: #c94669;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font: 1em Arial;
+  transition: 0.4s;
+}
+
+.home-button a:hover
+{
+  background: #880021;
+}
+.news
+{
+  font: 1.1em Arial;
+  text-align: center;
+  margin-bottom: 40px
+}
+#news-title
+{
+  font-weight: bold;
+  font-size: 4em;
+  color: #3e3e3e
+}
+.articles
+{
+  box-sizing: border-box;
+  display: flex;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  justify-content: space-between;
+}
+.article
+{
+  border: 1px solid lightgray;
+  flex: 0 0 292px;
+  height: 313px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.article-photo1, .article-photo2, .article-photo3
+{
+  height: 165px;
+  width: 100%;
+}
+.article-photo1
+{
+  background: url("content/blog/blog1.jpg") 0 0 no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.article-photo2
+{
+  background: url("content/blog/blog2.jpg") 0 0 no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.article-photo3
+{
+  background: url("content/blog/blog3.jpg") 0 0 no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.article-about
+{
+  padding: 24px;
+}
+.article-about p
+{
+  padding: 3px 0 3px 0;
+  font-weight: bold;
+  margin: 0;
+  width: 244px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.article-about a
+{
+  text-decoration: none;
+  color: black
+}
+.article-about p:hover
+{
+  color: #c94669
+}
+.article-interaction
+{
+  margin-top: 35px;
+}
+.separator
+{
+  height: .9px;
+  background-color: black;
+  width: 100%;
+  opacity: 0.2
+}
+.article-stat
+{
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  font-size: .7em;
+  justify-content: space-between;
+}
+.article-stat span
+{
+  opacity: 0.7;
+}
+.views
+{
+  display: inline-flex;
+  align-items: center;
+}
+.views object
+{
+  margin-right: 6px;
+  opacity: 0.8;
+  width: 19px;
+  height: 19px;
+}
+.views a
+{
+  margin-left: 16px;
+  text-decoration: none;
+}
+.likes
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: .7em;
+}
+
+.more-button a
+{
+  text-align: center;
+  margin: 30px auto;
+  padding-top: 10px;
+  width: 170px;
+  background-color: #c94669;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: .9em;
+  transition: 0.4s;
+  height: 30px;
+}
+.more-button a:hover
+{
+  background-color: #880021
+}
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent ;
+}
+.liked svg {
+    fill: red;
+}
+
+.liked svg path {
+    stroke: red;
+}
+
+@media all and (max-width: 1050px)
+{
+  .header-home
+{   
+  height: 590px;
+}
+  .home-title
+{
+  font: bold 2.5em Arial;
+  padding: 200px 5% 0 5%;
+  width: auto;
+}
+  .home-about
+{
+  flex-direction: column;
+  height: auto;
+}
+  .news
+{
+  font: .9em Arial;
+  margin-bottom: 20px
+}
+#news-title
+{
+  font-size: 2em;
+}
+.articles
+{
+  flex-direction: column;
+  width: 70%;
+}
+  .article
+  {
+    flex: 1 1 500px
+  }
+  .article-interaction 
+  {
+    margin-top: 80px;
+  }
+  .article-about p
+{
+  width: 100%;
+}
+  .article-photo1, .article-photo2, .article-photo3 
+  {
+    height: 250px;
+    width: 100%;
+  }
+  .views a {
+    margin-left: 10px;
+    width: 55px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  .more-button a
+{
+  margin: 20px auto;
+  width: 140px;
+}
+  .slogan
+{
+  font: italic 1.8em Arial;
+  height: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 40px;
+}
+  .slogan p
+{
+  margin-bottom: 0
+}
+.home-button a
+{
+  
+  height: 30px;
+  width: 140px;
+  padding-top: 10px;
+}
+  .networks
+{
+  position: static;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+}
+  .networks p
+{
+  margin: 0 auto 0
+}
+  .networks i
+  {
+    float: left;
+    padding: 0 8% 0 8%
+  }
+  .all-networks
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 165px;
+    height: 98%;
+    padding-top: 12px
+  }
+}
+
+@media all and (max-width: 870px)
+{
+.home-join
+{
+  flex-direction: column;
+  height: 900px;
+}
+  .join-img
+  {
+    order: -1
+  }
+  .join-text span
+{
+  color: white;
+  font: 1.6em Arial;
+}
+  #join-text
+{
+  font-size: 3.3em;
+  font-weight: bold;
+}
+}

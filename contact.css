@@ -1,0 +1,165 @@
+.contact
+{
+  display: flex;
+  height: 827px;
+}
+.contact-form
+{
+  padding-top: 50px;
+  flex: 1 1 100px;
+  background-color: white;
+  text-align: center;
+  font: 1.1em Arial;
+  color: #444444;
+}
+.form-class
+{
+  text-align: left; 
+  margin-left: calc((100% - 490px) * 0.5);
+  max-width: 484px;
+}
+#contact-title
+{
+  font-weight: bold;
+  font-size: 2.1em
+}
+
+#required:after
+{
+content: " * ";
+}
+
+.form-class input[type=text], .form-class input[type=email]
+{
+  width: 216px;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding-bottom: 6px;
+  font: normal 0.8em Arial;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.form-class #email, .form-class #subj
+{
+  width: 485px;
+}
+.form-class #type
+{
+  width: 485px;
+  height: 100px;
+}
+.form-class input[type=submit]
+{
+  width: 150px;
+  background-color: white;
+  text-align: center;
+  border: none;
+  color: #1b3c8d;
+  padding: 14px;
+  text-decoration: none;
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 0.9em;
+
+}
+input[type=email]:hover, input[type=email]:focus, input[type=text]:hover, input[type=text]:focus 
+{
+  border-bottom-width: 3px;
+}
+input[type=submit]:hover
+{
+  background-color: #1b3c8d;
+  color: white
+}
+.contact-button
+{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-grid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px
+}
+.contact-img
+{
+  flex: 1 1 100px;
+  position: relative;
+  overflow: hidden;
+}
+.contact img
+{
+  max-height: 100%;
+  position: absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+}
+.map
+{
+  height: 400px;
+  width: 100%;
+}
+.map iframe
+{
+  height: 400px;
+  width: 100%;
+}
+.invalid 
+{ 
+  border-bottom-color: red !important; 
+  border-bottom-width: 3px !important;
+}
+@media all and (max-width: 1045px)
+{
+  .contact
+  {
+    flex-direction: column;
+    height: 850px;
+  }
+  .form-grid
+  {
+    display: block
+  }
+  .contact-img
+  {
+    display: none
+  }
+  .form-class
+  {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+    padding: 2%
+  }
+  .form-class input[type=text], .form-class input[type=email], .form-class #email, .form-class #subj , .form-class #type 
+{
+  width: 100%;
+}
+  
+}
+@media all and (max-width: 500px)
+{
+  .contact
+  {
+    flex-direction: column;
+    height: 1300px;
+  }
+.contact-img img
+  {
+    width: auto;
+    height: 100%;
+  }
+.contact-img
+  {
+    order: -1;
+    width: 100%;
+    height: auto;
+    display: block
+  }
+  
+}

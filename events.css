@@ -1,0 +1,200 @@
+.home-events
+{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px
+}
+#events-title
+{
+  font: bold 4em Arial;
+  color: #3e3e3e
+}
+.events-button
+{
+  flex: 0 0 50px;
+}
+.events-button a
+{
+  text-align: center;
+  height: 30px;
+  width: 150px;
+  margin: 30px auto;
+  padding-top: 12px;
+  background: #c94669;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font: .9em Arial;
+}
+.events-button a:hover
+{
+  background: #da8097;
+}
+.events-list
+{
+  width: 980px;
+}
+.events-list li
+{
+  padding: 30px 0; 
+  border-bottom: 1px solid lightgray;
+  display: block;
+  transition: border-color 0.4s;
+}
+.events-list-item
+{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+}
+.events-list-itemflex
+{
+  flex: 1 1 100px;
+  overflow: hidden;
+}
+.events-name
+{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.events-date
+{
+  flex: 0 0 auto;
+  height: 80px;
+  transition: max-width .4s;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  overflow: hidden
+}
+.events-date2
+{
+  margin-right: 5px;
+}
+.events-day
+{
+  font: 40px Arial ;
+  margin-right: 12px;
+}
+.events-weekday
+{
+  opacity: 0.5;
+  font: 14px Arial;
+  margin-bottom: 2px
+}
+.events-month
+{
+  font: 14px Arial;
+}
+.events-title-full
+{
+  display: flex;
+  align-items: baseline;
+  font: 16px Arial;
+  margin-left: 20px;
+  transition: width .4s;
+}
+.events-list li:last-of-type
+{
+  border-bottom-color: transparent;
+}
+.events-list li:hover .events-date
+{
+  max-width: 0px
+}
+
+.events-list li:hover .events-location
+{
+  visibility: hidden
+}
+.events-list li:hover .events-title
+{
+  color: #c94669;
+  border-bottom-color: #c94669;
+}
+.events-list li:hover
+{
+  border-bottom-color: #c94669;
+}
+.morelabel 
+{
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.fulltext, .fulltext2, .fulltext3
+{
+  display: none;
+  font: .9em Arial;
+  text-align: left;
+  padding-left: 25px;
+  opacity: .8
+}
+
+input[type=checkbox]
+{
+  display: none
+}
+#more:checked + .fulltext, #more2:checked + .fulltext2, #more3:checked + .fulltext3
+{
+  display: block
+}
+
+@media all and (max-width: 1050px)
+{
+  .home-events, .events-list
+  {
+    width: 100%
+  }
+  #events-title 
+  {
+    font-size: 2em;
+    margin-top: 50px
+  }
+  .events
+  {
+    width: 80%
+  }
+.events-list ul
+  {
+    padding-left:0
+  }
+  
+  .events-list-item 
+  {
+    flex-direction: column
+  }
+  .events-name 
+  {
+    flex-direction: column
+}
+  .events-list li:hover .events-date
+{
+  max-width: 350px
+}
+  #more:checked + .fulltext, #more2:checked + .fulltext2, #more3:checked + .fulltext3
+{
+  display: none
+}
+  .events-title-full
+  {
+    text-overflow: ellipsis;
+    margin-left: 0
+  }
+}
+
+@media all and (max-width: 500px)
+{
+  .events-location
+  {
+    display: none
+  }
+}
+
+
+
+

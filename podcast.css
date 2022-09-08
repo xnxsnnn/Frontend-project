@@ -1,0 +1,169 @@
+#podcast-name
+{
+  font-weight: normal;
+  font-size: 0.3em;
+  margin-top: 0px;
+}
+.podcasts1
+{
+  display: flex;
+  justify-content: center;
+}
+.podcasts2
+{
+  padding-top: 48px;
+  padding-left: 20px
+}
+.main-episodes
+{
+  width: 960px;
+}
+.episode
+{
+  font: .9em Arial;
+}
+.episode a
+{
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+.podcast-cover
+{
+  flex-shrink: 0;
+  margin-right: 30px;
+  width: 133px;
+  height: 133px;
+  background: url("content/podcast/podcast.png") 0 0 no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.podcast-cover:before
+{
+  content:'';
+  position: absolute;
+  visibility: hidden;
+  background: rgba(0,0,0,0.4);
+  width: 133px;
+  height: 133px;
+  background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url("content/podcast/play.png");
+}
+.episode:hover .podcast-cover:before
+{
+  visibility: visible
+}
+.episode:hover .episode-title
+{
+  color: #c94669
+}
+.episode-about
+{   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.episode-title
+{
+    font-size: 1.6em;
+}
+.episode-info
+{
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+.line, .time, .date
+{
+  opacity: 0.6;
+}
+.date
+{
+  margin-right: 7px;
+}
+.time
+{
+  margin-left: 7px;
+}
+#latest
+{
+    padding: 2px 8px;
+    margin-left: 6px;
+    border: 1px solid;
+    border-radius: 2px;
+  font-size: .8em
+}
+.describtion
+{
+  margin-top: 12px;
+    max-width: 100%;
+  line-height: 1.5;
+  font-size: 1.1em
+}
+.hor-line
+{
+  height: .9px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 20px 0px;
+}
+.podcasts-search
+{
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.podcasts-search object
+{
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  margin: 5px 6px 5px 0;
+}
+.podcasts-search input[type=text]
+{
+  width: 292px;
+  font: .9em Arial;
+  opacity: 0.6;
+  border: none;
+  outline:none;
+  padding: 5px 5px 5px 23px
+}
+
+.podcasts-search input[type=text]:hover
+{
+  opacity: 1
+}
+.podcasts-search input[type=text]:focus
+{
+  box-shadow: 0 0 1px 2px #3899ec;
+  opacity: 1
+}
+
+@media all and (max-width: 1000px)
+{
+  .main-episodes {
+    width: 100%;
+}
+}
+
+@media all and (max-width: 500px)
+{
+  .podcast-cover 
+  {
+    width: 50px;
+    height: 50px;
+}
+  .podcast-cover:before
+{
+  width: 50px;
+    height: 50px;
+}
+  .describtion
+  {
+    display: none
+  }
+  .podcasts-search input[type=text] 
+  {
+    width: 100%;
+}
+}

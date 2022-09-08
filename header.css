@@ -1,0 +1,220 @@
+body
+{
+  margin: 0
+}
+.header-title
+{
+  background-color: #1b3c8d;
+  height: 280px;
+}
+.title
+{
+  color: white;
+  font: bold 4em Arial;
+  padding-top: 130px;
+  margin-top: 0;
+  text-align: center;
+}
+.header
+{
+  height: 70px;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+	background: rgba(0,0,0,.5);
+  
+}
+.logoheader
+{
+  font-size: 22px;
+  float: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+.logoheader a
+{
+  cursor: pointer;
+}
+.logoheader span
+{
+  padding-left: 20px;
+}
+.logoheader object
+{
+height: 32px;
+  width: 24px;
+}
+.menu
+{
+  overflow: hidden;
+  width: 85%;
+  float: left;
+}
+.menu a:not(:first-child)
+{
+  display: block;
+  padding: 27px 16px;
+  float: left;
+}
+.menu .menubar 
+{
+  display: none !important;
+  font-size: 1.5em
+}
+.header a
+{
+  color: white;
+  text-decoration: none;
+  font: 0.9em Arial;
+  transition: 0.3s;
+}
+.header a:hover
+{
+  color: lightgray;
+}
+.header-button
+{
+  height: 100%;
+  text-align: center;
+  font-size: 22px;
+  background-color: #c94669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  float: right
+}
+
+#following
+{
+  color: lightgray ;
+}
+
+@keyframes animation-button
+{
+    from { background-color: #c94669; }
+    50% { background-color: #880021; }
+    to { background-color: #c94669; }
+}
+.header-button:hover
+{
+  animation: animation-button 4s infinite;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+  font-size: 3em;
+  color: #878787;
+  cursor: pointer;
+  display: none;
+}
+
+.back-to-top:hover 
+{
+  color: #c94669;
+}
+.back-to-top-show 
+{
+  display: block;
+}
+
+
+@media all and (max-width: 1050px)
+{
+  .header-menu
+  {
+    height: 69px;
+    padding-top: 1px;
+    margin-left: auto;
+    width: 5%;
+    margin-right: 5%;
+  }
+  .header-menu li .menubar 
+  {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .menu
+  {
+    float: right;
+  }
+  .menu a:not(:first-child) 
+  {
+    display: none;
+    padding: 20px 5% 20px 0;
+  }
+  .header-button
+  {
+    float: none;
+    width: 100%;]
+  }
+  .menu .menubar
+  {
+    float: right !important;
+    display: block !important;
+  }
+  .logoheader
+  {
+    height: 70px;
+    padding-left: 5%;
+  }
+  .menu.responsive 
+  {
+    position: relative;
+    float: right;
+    background-color: #062474;
+    width:  100%;
+  }
+  .menu.responsive .menubar 
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+    padding-left: 5%
+  }
+  .menu.responsive .logoheader 
+  {
+    float: none;
+  }
+  .back-to-top 
+  {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+  }
+  .header-title
+{
+  height: 320px;
+}
+  .title
+{
+  padding-top: 170px;
+}
+}
+@media all and (max-width: 330px)
+{
+  .logoheader
+  {
+    width: 100px
+  }
+}
+@media all and (max-width: 400px)
+{
+  .header-title
+{
+  height: 400px;
+}
+}
+

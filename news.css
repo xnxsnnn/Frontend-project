@@ -1,0 +1,188 @@
+.news
+{
+  font: 1em Arial;
+}
+.blog
+{
+  margin: 80px auto 60px;
+  width: 940px;
+  display: flex;
+  flex-direction: column;
+}
+.article
+{
+  width: 100%;
+  height: 340px;
+  border: 1px solid lightgray;
+  margin-bottom: 30px;
+}
+.article-photo
+{
+  float: left;
+  height: 340.5px;
+  width: 454px;
+  position: relative;
+  overflow: hidden;
+}
+.article-photo img
+{
+  height: 100%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.article-info span
+{
+  font-weight: bold;
+  font-size: 1.8em;
+  
+}
+.article-about
+{
+  float: right;
+  width: 486px;
+  height: 100%
+}
+.article-info
+{
+  padding: 30px;
+  display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+  height: 280px
+}
+.article-info p
+{
+  line-height: 1.5;
+  opacity: .9;
+  margin: 20px 0 60px 0;
+}
+
+.separator
+{
+  height: .9px;
+  background-color: black;
+  width: 100%;
+  opacity: 0.2
+}
+.article-stat
+{
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  font-size: .7em;
+  justify-content: space-between;
+}
+.article-stat span
+{
+  opacity: 0.7;
+  font-size: 1.1em !important
+}
+.views
+{
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+.views a
+{
+  margin-left: 16px;
+  text-decoration: none;
+  color:black
+}
+.views a:hover
+{
+  color: #c94669
+}
+.likes
+{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: .7em;
+}
+
+.more-button a
+{
+  text-align: center;
+  margin: 30px auto;
+  padding-top: 10px;
+  width: 170px;
+  background-color: #c94669;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: .9em;
+  transition: 0.4s;
+  height: 30px;
+}
+.more-button a:hover
+{
+  background-color: #880021
+}
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent ;
+}
+.liked svg 
+{
+    fill: red;
+}
+
+.liked svg path 
+{
+    stroke: red;
+}
+.article-text:hover
+{
+  color: #c94669;
+  cursor: pointer
+}
+
+@media all and (max-width: 1050px)
+{
+  .blog
+  {
+    width: 65%
+  }
+  .article-photo
+  {
+    float: none;
+    height: 60%;
+    width: 100%
+  }
+  .article-info span
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .article
+  {
+    height: 900px
+  }
+  .article-about
+  {
+    float: none;
+    width: 100%
+  }
+  .article-text
+  {
+    height: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+}
+@media all and (max-width: 750px)
+{
+  .article-photo
+  {
+    height: 40%;
+  }
+  .article
+  {
+    height: 600px
+  }
+}

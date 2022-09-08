@@ -1,0 +1,165 @@
+.involved
+{
+  padding-top: 55px;
+  height: 300px;
+  text-align: center;
+  font: 1.2em Arial;
+  color: #444444;
+}
+.involved p, .change p
+{
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5
+}
+.involved span, .change span
+{
+  font-size: 2em;
+  font-weight: bold
+}
+.inv-button a
+{
+  text-align: center;
+  margin: 30px auto;
+  padding-top: 10px;
+  width: 180px;
+  background-color: #c94669;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font: .9em Arial;
+  transition: 0.4s;
+  height: 30px;
+}
+.inv-button a:hover
+{
+  background-color: #880021
+}
+.sup-img
+{
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+}
+.sup-img img
+{
+  height: 100%
+}
+.change
+{
+  padding-top: 55px;
+  height: 170px;
+  text-align: center;
+  font: 1.2em Arial;
+  color: #444444;
+}
+.donation
+{
+  display: flex;
+  justify-content: center;
+  height: 280px;
+}
+.first-donation
+{
+  background-color: #a73550;
+}
+.sec-donation
+{
+  background-color: #2571df;
+}
+.third-donation
+{
+  background-color: #1b3c8d;
+}
+.first-donation, .sec-donation, .third-donation
+{
+  flex: 1 1 100px;
+  text-align: center;
+  padding-top: 45px;
+  color: white;
+  font: 0.9em Arial;
+}
+.first-donation span, .sec-donation span, .third-donation span
+{
+  font-weight: bold;
+  font-size: 1.9em;
+}
+.first-donation p, .sec-donation p, .third-donation p
+{
+  line-height: 1.5
+}
+.donate-button a
+{
+  text-align: center;
+  padding-top: 10px;
+  width: 150px;
+  background-color: white;
+  display: inline-block;
+  color: #1b3c8d;
+  text-decoration: none;
+  font: 1.1em Arial;
+  transition: 0.4s;
+  height: 30px;
+}
+
+.donate-button a:hover
+{
+  background-color: #062474;
+  color: white
+}
+.donation-icon
+{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.donation-icon object
+{
+  width: 30px;
+  height: 30px;
+}
+.bookmark
+{
+  height: 70px;
+  position: absolute;
+	top: 480px;
+	width: 1547px;
+}
+
+@media all and (max-width: 940px)
+{
+  .sup-img
+  {
+    width: 100%;
+    height: auto
+  }
+  .sup-img img
+  {
+    width: 100%;
+    height: auto
+  }
+  .donation
+  {
+    flex-direction: column;
+    height: auto
+  }
+  .first-donation, .sec-donation, .third-donation
+  {
+    padding-bottom: 45px
+  }
+  .involved
+  {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .involved p, .change p
+  {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%
+  }
+  .involved span, .change span 
+  {
+    font-size: 1.5em;
+  }
+}
